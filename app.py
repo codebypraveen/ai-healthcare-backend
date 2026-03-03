@@ -16,6 +16,11 @@ mlb = joblib.load("symptom_encoder.pkl")
 # Load dataset for medicine lookup
 df = pd.read_csv("disease_dataset_3000_rows.csv")
 
+
+@app.route("/")
+def home():
+    return "AI Healthcare Backend is Running Successfully 🚀"
+
 # 🔴 Define serious diseases
 SERIOUS_DISEASES = [
     "Diabetes",
@@ -134,3 +139,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
+    
