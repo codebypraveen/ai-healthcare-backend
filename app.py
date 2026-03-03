@@ -14,7 +14,7 @@ model = joblib.load("disease_model.pkl")
 mlb = joblib.load("symptom_encoder.pkl")
 
 # Load dataset for medicine lookup
-df = pd.read_csv("../data/disease_dataset_3000_rows.csv")
+df = pd.read_csv("disease_dataset_3000_rows.csv")
 
 # 🔴 Define serious diseases
 SERIOUS_DISEASES = [
